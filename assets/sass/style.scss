@@ -225,59 +225,6 @@ $bottom: null) {
 
 /* common styles !!!YOU DON'T NEED THEM  */
 
-h1 {
-    margin: 0;
-    font: {
-        weight: 400;
-        size: 35px;
-    }
-    span {
-        font: {
-            family: 'Kaushan Script', cursive;
-        }
-        color: $accent-theme-color;
-    }
-}
-
-.content-block {
-    margin-top: 50px;
-    h2 {
-        margin-bottom: 30px;
-        font: {
-            weight: 400;
-        }
-    }
-}
-
-.content-block__effect {
-    margin-bottom: 50px;
-}
-
-.progress-container {
-    margin-bottom: 30px;
-}
-
-.play-animation {
-    @include transition-mix;
-    padding: 5px 15px;
-    margin: auto;
-    font: {
-        family: inherit;
-        size: inherit;
-    }
-    color: inherit;
-    border: 2px solid $dark-theme-color;
-    border-radius: 4px;
-    background-color: transparent;
-    box-shadow: none;
-    outline: none;
-    cursor: pointer;
-    &:hover {
-        color: $light-theme-color;
-        background-color: $dark-theme-color;
-    }
-}
-
 
 /* progress bar styles !!!YOU NEED THEM */
 
@@ -290,8 +237,9 @@ $progress-bar-offset-vert: 35px;
 }
 
 .progress-bar {
+    background-color: #E9E6E6 !important;
     position: relative;
-    width: $progress-bar-width;
+    // width: $progress-bar-width;
     box-sizing: border-box;
     &:not(:last-child) {
         margin-bottom: $progress-bar-offset-vert;
@@ -304,17 +252,17 @@ $progress-bar-offset-vert: 35px;
     }
 }
 
-.progress-bar__bar,
-.progress-bar__bar-inner,
-.progress-bar__value,
-.progress-bar__skill {
-    box-sizing: border-box;
-}
+// .progress-bar__bar,
+// .progress-bar__bar-inner,
+// .progress-bar__value,
+// .progress-bar__skill {
+//     box-sizing: border-box;
+// }
 
 .progress-bar__bar {
     position: relative;
     height: 100%;
-    width: 100%;
+    // width: 100%;
     overflow: hidden;
 }
 
@@ -340,6 +288,8 @@ $progress-bar-offset-vert: 35px;
     font-size: 18px;
     line-height: 25px;
     color: $primary-black;
+    text-transform: uppercase;
+    // margin-bottom: 5rem;
 }
 
 .progress-bar__value--aligned-value {

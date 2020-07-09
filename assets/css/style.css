@@ -22,6 +22,50 @@
   color: #999898;
 }
 
+.header {
+  padding-top: 1.1rem;
+}
+
+.header nav {
+  width: 87%;
+}
+
+.header .nav-link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  font-family: 'Nunito', sans-serif;
+  color: #FFF !important;
+}
+
+.header .nav-item {
+  padding-right: 24px;
+}
+
+.hero_bg {
+  background: url("../img/dotair background png.png");
+  background-repeat: none;
+}
+
+.hero_content {
+  padding-bottom: 35vh;
+}
+
+.hero_content p {
+  color: #FFF !important;
+  padding-top: 10px;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+  /* identical to box height */
+  letter-spacing: 0.2em;
+}
+
+.hero_main {
+  padding-top: 19.6vh;
+}
+
 .about {
   padding-top: 81px;
   padding-bottom: 42px;
@@ -65,8 +109,12 @@
   font-size: 48px;
   line-height: 56px;
   margin-top: 29px;
-  margin-bottom: 20px;
+  padding-bottom: 2rem;
   color: #FEE105;
+}
+
+.info .info_counter {
+  padding-top: 2rem;
 }
 
 .info li {
@@ -132,5 +180,140 @@ footer .heading {
   font-size: 48px;
   line-height: 56px;
   text-transform: uppercase;
+}
+
+/* common styles !!!YOU DON'T NEED THEM  */
+/* progress bar styles !!!YOU NEED THEM */
+.progress-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.progress-bar {
+  background-color: #E9E6E6 !important;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.progress-bar:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.progress-bar--lg-offset:not(:last-child) {
+  margin-bottom: 52.5px;
+}
+
+.progress-bar__bar {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.progress-bar__bar--no-overflow {
+  overflow: visible;
+}
+
+.progress-bar__bar-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+}
+
+.progress-bar__bar-inner.js-animated {
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.1, 1.14, 0.31, 1.06);
+          transition-timing-function: cubic-bezier(0.1, 1.14, 0.31, 1.06);
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.progress-bar__skill,
+.progress-bar__value {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.progress-bar__value--aligned-value {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+/* progress bar #1 styles */
+.progress-bar--1 {
+  height: 14px;
+  padding: 0px;
+  border: 1px solid #dddddd;
+  border-radius: 14px;
+}
+
+.progress-bar__bar-inner--1 {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #00BFB3));
+  background-image: linear-gradient(to right, #00BFB3 0);
+  background-size: 200%;
+  background-position: 0 0;
+  border-radius: 14px;
+}
+
+.progress-bar__skill--1 {
+  position: absolute;
+  top: -33px;
+  left: -20px;
+  opacity: 0;
+}
+
+.progress-bar__skill--1.js-animated {
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  left: 0;
+  opacity: 1;
+}
+
+.progress-bar__value--1 {
+  position: absolute;
+  top: -33px;
+  right: -20px;
+  opacity: 0;
+}
+
+.progress-bar__value--1.js-animated {
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  right: 0;
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */
