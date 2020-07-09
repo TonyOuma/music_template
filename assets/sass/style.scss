@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+$bg-blue: #10055B;
+$primary-white: #FFF;
+$font-color-gray: rgba(255, 255, 255, 0.75);
+$font-dark-gray: #999898;
+$font-color-blue:  #341DCF;
+$primary-yellow: #FEE105;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+%intro_heading{
+    font-family: OptimusPrincepsSemiBold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    text-transform: uppercase;
+    line-height: 56px;
+}
+%span_heading{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    font-family: 'Nunito', sans-serif;
+    color: $font-dark-gray;
+}
+
+.about{
+    padding-top: 81px;
+    padding-bottom: 42px;
+ &_heading{
+    @extend %intro_heading;
+    color: $font-color-blue;
+}
+}
+
+.photos{
+    padding-top: 76px;
+    &_heading{
+        @extend %intro_heading;
+        color: $font-color-blue;
+    }
+}
+
+.gigs{
+    padding-top: 57px;
+    &_heading{
+        @extend %intro_heading;
+        color: $font-color-blue;
+    }
+
+    .heading_span{
+        @extend %span_heading;
+        
+    }
+}
+// info_section
+.info{
+    background: url("../img/Mask\ Group.png");
+    background-position: center;
+    color: $primary-white;
+
+    &_pad{
+        padding-top: 29px;
+        padding-bottom: 49px;
+    }
+
+    &_intro{
+        font-family: OptimusPrincepsSemiBold;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 56px;
+        margin-top: 29px;
+        margin-bottom: 20px;
+        color: #FEE105;
+    }
+
+    li{
+        list-style: none;
+        span{
+            color: $font-color-gray;
+        }
+    }
+    .counter{
+        font-family: OptimusPrinceps;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 52px;
+        line-height: 59px;
+        color: $primary-yellow;
+        margin-top: 32px;
+    }
+    p{
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 25px;
+        font-family: 'Nunito', sans-serif
+    }    
+ 
+}
+
+
+// blog_section
+.blog{
+    padding-top: 64px;
+    padding-bottom: 89px;
+    &_heading{
+        @extend %intro_heading;
+        color: $font-color-blue;
+    }
+    .heading_span{
+        @extend %span_heading;
+    }
+}
+
+
+// footer
+footer{
+    background: $bg-blue;
+    color: #FFF;
+    padding-top: 41px;
+
+    ul{
+        li{
+            list-style: none;
+            color: #FFF !important;
+
+            span{
+                a{
+                    color:rgba(255, 255, 255, 0.75) !important;
+                }
+            }
+        }
+    }
+    .social_icons{
+        li{
+            img{
+                padding-right: 32.61px;
+            }
+        }
+        
+    }
+
+    .copyright{
+        padding-top: 61px;
+        padding-bottom: 21px;
+    }
+    .heading{
+        font-size: 48px;
+        line-height: 56px;
+        text-transform: uppercase;
+    }
+}
