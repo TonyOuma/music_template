@@ -1,18 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
-
 $bg-blue: #10055B;
 $primary-white: #FFF;
-$font-color-gray: rgba(255, 255, 255, 0.75);
+$font-color-gray: rgba(255,
+255,
+255,
+0.75);
 $font-dark-gray: #999898;
-$font-color-blue:  #341DCF;
+$font-color-blue: #341DCF;
 $primary-yellow: #FEE105;
-
-*{
+$primary-black: #000;
+* {
     margin: 0;
     padding: 0;
 }
 
-%intro_heading{
+%intro_heading {
     font-family: OptimusPrincepsSemiBold;
     font-style: normal;
     font-weight: 600;
@@ -20,7 +22,8 @@ $primary-yellow: #FEE105;
     text-transform: uppercase;
     line-height: 56px;
 }
-%span_heading{
+
+%span_heading {
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
@@ -29,64 +32,104 @@ $primary-yellow: #FEE105;
     color: $font-dark-gray;
 }
 
-.about{
+.header {
+    padding-top: 1.1rem;
+    nav {
+        width: 87%;
+    }
+    .nav-link {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        font-family: 'Nunito', sans-serif;
+        color: $primary-white !important;
+    }
+    .nav-item {
+        padding-right: 24px;
+    }
+}
+
+.hero {
+    &_bg {
+        background: url("../img/dotair\ background\ png.png");
+        background-repeat: none;
+    }
+    &_content {
+        // padding-top: 18vh;
+        padding-bottom: 35vh;
+        p {
+            color: $primary-white !important;
+            padding-top: 10px;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 33px;
+            /* identical to box height */
+            letter-spacing: 0.2em;
+        }
+    }
+    &_main {
+        padding-top: 19.6vh;
+    }
+}
+
+.about {
     padding-top: 81px;
     padding-bottom: 42px;
- &_heading{
-    @extend %intro_heading;
-    color: $font-color-blue;
-}
+    &_heading {
+        @extend %intro_heading;
+        color: $font-color-blue;
+    }
 }
 
-.photos{
+.photos {
     padding-top: 76px;
-    &_heading{
+    &_heading {
         @extend %intro_heading;
         color: $font-color-blue;
     }
 }
 
-.gigs{
+.gigs {
     padding-top: 57px;
-    &_heading{
+    &_heading {
         @extend %intro_heading;
         color: $font-color-blue;
     }
-
-    .heading_span{
+    .heading_span {
         @extend %span_heading;
-        
     }
 }
+
 // info_section
-.info{
+.info {
     background: url("../img/Mask\ Group.png");
     background-position: center;
     color: $primary-white;
-
-    &_pad{
+    &_pad {
         padding-top: 29px;
         padding-bottom: 49px;
     }
-
-    &_intro{
+    &_intro {
         font-family: OptimusPrincepsSemiBold;
         font-style: normal;
         font-weight: 600;
         font-size: 48px;
         line-height: 56px;
         margin-top: 29px;
-        margin-bottom: 20px;
+        padding-bottom: 2rem;
         color: #FEE105;
     }
-
-    li{
+    .info_counter {
+        padding-top: 2rem;
+    }
+    li {
         list-style: none;
-        span{
+        span {
             color: $font-color-gray;
         }
     }
-    .counter{
+    .counter {
         font-family: OptimusPrinceps;
         font-style: normal;
         font-weight: 500;
@@ -95,65 +138,252 @@ $primary-yellow: #FEE105;
         color: $primary-yellow;
         margin-top: 32px;
     }
-    p{
+    p {
         font-style: normal;
         font-weight: 300;
         font-size: 18px;
         line-height: 25px;
         font-family: 'Nunito', sans-serif
-    }    
- 
+    }
 }
 
-
 // blog_section
-.blog{
+.blog {
     padding-top: 64px;
     padding-bottom: 89px;
-    &_heading{
+    &_heading {
         @extend %intro_heading;
         color: $font-color-blue;
     }
-    .heading_span{
+    .heading_span {
         @extend %span_heading;
     }
 }
 
-
 // footer
-footer{
+footer {
     background: $bg-blue;
     color: #FFF;
     padding-top: 41px;
-
-    ul{
-        li{
+    ul {
+        li {
             list-style: none;
             color: #FFF !important;
-
-            span{
-                a{
-                    color:rgba(255, 255, 255, 0.75) !important;
+            span {
+                a {
+                    color: rgba(255, 255, 255, 0.75) !important;
                 }
             }
         }
     }
-    .social_icons{
-        li{
-            img{
+    .social_icons {
+        li {
+            img {
                 padding-right: 32.61px;
             }
         }
-        
     }
-
-    .copyright{
+    .copyright {
         padding-top: 61px;
         padding-bottom: 21px;
     }
-    .heading{
+    .heading {
         font-size: 48px;
         line-height: 56px;
         text-transform: uppercase;
+    }
+}
+
+//COMMON VARIABLES
+$dark-theme-color: #1c1c1c;
+$accent-theme-color: #A42CD6;
+$light-theme-color: #fff;
+//MIXINS
+//transitions mixin
+@mixin transition-mix($property: all,
+$duration: 0.2s,
+$timing: linear,
+$delay: 0s) {
+    transition-property: $property;
+    transition-duration: $duration;
+    transition-timing-function: $timing;
+    transition-delay: $delay;
+}
+
+//position absolute mixin
+@mixin position-absolute ($top: null,
+$left: null,
+$right: null,
+$bottom: null) {
+    position: absolute;
+    top: $top;
+    left: $left;
+    right: $right;
+    bottom: $bottom;
+}
+
+
+/* common styles !!!YOU DON'T NEED THEM  */
+
+h1 {
+    margin: 0;
+    font: {
+        weight: 400;
+        size: 35px;
+    }
+    span {
+        font: {
+            family: 'Kaushan Script', cursive;
+        }
+        color: $accent-theme-color;
+    }
+}
+
+.content-block {
+    margin-top: 50px;
+    h2 {
+        margin-bottom: 30px;
+        font: {
+            weight: 400;
+        }
+    }
+}
+
+.content-block__effect {
+    margin-bottom: 50px;
+}
+
+.progress-container {
+    margin-bottom: 30px;
+}
+
+.play-animation {
+    @include transition-mix;
+    padding: 5px 15px;
+    margin: auto;
+    font: {
+        family: inherit;
+        size: inherit;
+    }
+    color: inherit;
+    border: 2px solid $dark-theme-color;
+    border-radius: 4px;
+    background-color: transparent;
+    box-shadow: none;
+    outline: none;
+    cursor: pointer;
+    &:hover {
+        color: $light-theme-color;
+        background-color: $dark-theme-color;
+    }
+}
+
+
+/* progress bar styles !!!YOU NEED THEM */
+
+$progress-bar-width: 550px;
+$progress-bar-offset-vert: 35px;
+.progress-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.progress-bar {
+    position: relative;
+    width: $progress-bar-width;
+    box-sizing: border-box;
+    &:not(:last-child) {
+        margin-bottom: $progress-bar-offset-vert;
+    }
+}
+
+.progress-bar--lg-offset {
+    &:not(:last-child) {
+        margin-bottom: $progress-bar-offset-vert * 1.5;
+    }
+}
+
+.progress-bar__bar,
+.progress-bar__bar-inner,
+.progress-bar__value,
+.progress-bar__skill {
+    box-sizing: border-box;
+}
+
+.progress-bar__bar {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.progress-bar__bar--no-overflow {
+    overflow: visible;
+}
+
+.progress-bar__bar-inner {
+    @include position-absolute($top: 0, $left: 0);
+    height: 100%;
+    transform: scaleX(0);
+    transform-origin: left center;
+    &.js-animated {
+        @include transition-mix($duration: .5s, $timing: cubic-bezier(0.1, 1.14, 0.31, 1.06));
+        transform: scaleX(1);
+    }
+}
+
+.progress-bar__skill,
+.progress-bar__value {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    color: $primary-black;
+}
+
+.progress-bar__value--aligned-value {
+    transform: translateX(-50%);
+}
+
+
+/* progress bar #1 styles */
+
+$progress-1-height: 14px;
+$progress-1-border: #dddddd;
+$progress-1-color-1: #00BFB3;
+$progress-1-color-2: #037971;
+$progress-1-label-top: - ($progress-1-height+7);
+.progress-bar--1 {
+    height: $progress-1-height;
+    padding: 0px;
+    border: 1px solid $progress-1-border;
+    border-radius: $progress-1-height;
+}
+
+.progress-bar__bar-inner--1 {
+    background-image: linear-gradient(to right, $progress-1-color-1 0);
+    background-size: 200%;
+    background-position: 0 0;
+    border-radius: $progress-1-height;
+}
+
+.progress-bar__skill--1 {
+    @include position-absolute($top: $progress-1-label-top, $left: -20px);
+    opacity: 0;
+    &.js-animated {
+        @include transition-mix;
+        left: 0;
+        opacity: 1;
+    }
+}
+
+.progress-bar__value--1 {
+    @include position-absolute($top: $progress-1-label-top, $right: -20px);
+    opacity: 0;
+    &.js-animated {
+        @include transition-mix;
+        right: 0;
+        opacity: 1;
     }
 }
