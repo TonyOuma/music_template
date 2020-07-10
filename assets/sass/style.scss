@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
-$bg-blue: #10055B;
+$bg-blue: #090236;;
 $primary-white: #FFF;
 $font-color-gray: rgba(255,
 255,
@@ -51,7 +51,7 @@ $primary-black: #000;
 
 .hero {
     &_bg {
-        background: url("../img/dotair\ background\ png.png");
+        background: url("../img/dotair\ background\ png\ desktop.png");
         background-repeat: none;
     }
     &_content {
@@ -79,6 +79,14 @@ $primary-black: #000;
     &_heading {
         @extend %intro_heading;
         color: $font-color-blue;
+    }
+    .card{
+        border: none;
+        // height: 70px;
+
+        &-image{
+            height: 55vh;
+        }
     }
 }
 
@@ -195,9 +203,7 @@ footer {
 }
 
 //COMMON VARIABLES
-$dark-theme-color: #1c1c1c;
-$accent-theme-color: #A42CD6;
-$light-theme-color: #fff;
+
 //MIXINS
 //transitions mixin
 @mixin transition-mix($property: all,
@@ -312,7 +318,7 @@ $progress-1-label-top: - ($progress-1-height+7);
 }
 
 .progress-bar__bar-inner--1 {
-    background-image: linear-gradient(to right, $progress-1-color-1 0);
+    background-image: linear-gradient(to right, $font-color-blue 0);
     background-size: 200%;
     background-position: 0 0;
     border-radius: $progress-1-height;
@@ -337,3 +343,25 @@ $progress-1-label-top: - ($progress-1-height+7);
         opacity: 1;
     }
 }
+
+.typing-demo {
+    width: 22ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: inherit;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }

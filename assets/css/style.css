@@ -43,7 +43,7 @@
 }
 
 .hero_bg {
-  background: url("../img/dotair background png.png");
+  background: url("../img/dotair background png desktop.png");
   background-repeat: none;
 }
 
@@ -73,6 +73,14 @@
 
 .about_heading {
   color: #341DCF;
+}
+
+.about .card {
+  border: none;
+}
+
+.about .card-image {
+  height: 55vh;
 }
 
 .photos {
@@ -153,7 +161,7 @@
 }
 
 footer {
-  background: #10055B;
+  background: #090236;
   color: #FFF;
   padding-top: 41px;
 }
@@ -270,8 +278,8 @@ footer .heading {
 }
 
 .progress-bar__bar-inner--1 {
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #00BFB3));
-  background-image: linear-gradient(to right, #00BFB3 0);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #341DCF));
+  background-image: linear-gradient(to right, #341DCF 0);
   background-size: 200%;
   background-position: 0 0;
   border-radius: 14px;
@@ -279,7 +287,7 @@ footer .heading {
 
 .progress-bar__skill--1 {
   position: absolute;
-  top: -33px;
+  top: -21px;
   left: -20px;
   opacity: 0;
 }
@@ -299,7 +307,7 @@ footer .heading {
 
 .progress-bar__value--1 {
   position: absolute;
-  top: -33px;
+  top: -21px;
   right: -20px;
   opacity: 0;
 }
@@ -315,5 +323,40 @@ footer .heading {
           transition-delay: 0s;
   right: 0;
   opacity: 1;
+}
+
+.typing-demo {
+  width: 22ch;
+  -webkit-animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+          animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: inherit;
+}
+
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@-webkit-keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
 /*# sourceMappingURL=style.css.map */
