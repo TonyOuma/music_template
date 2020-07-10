@@ -1,11 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+@font-face {
+  font-family: 'optimusprincepssemiboldRg';
+  src: url("../fonts/optimusprincepssemibold-webfont.woff2") format("woff2"), url("../fonts/optimusprincepssemibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'optimusprincepsregular';
+  src: url("../fonts/optimusprinceps-webfont.woff2") format("woff2"), url("../fonts/optimusprinceps-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
-.about_heading, .photos_heading, .gigs_heading, .blog_heading {
-  font-family: OptimusPrincepsSemiBold;
+.about_heading, .photos_heading, .gigs_heading, .blog_heading, .music_heading {
+  font-family: 'optimusprincepssemiboldRg';
   font-style: normal;
   font-weight: 600;
   font-size: 48px;
@@ -28,6 +42,10 @@
 
 .header nav {
   width: 87%;
+}
+
+.header nav .navbar-toggler-icon {
+  background-image: url("../img/Group 26.svg");
 }
 
 .header .nav-link {
@@ -167,6 +185,7 @@ footer {
 }
 
 footer ul li {
+  line-height: 35px;
   list-style: none;
   color: #FFF !important;
 }
@@ -188,6 +207,7 @@ footer .heading {
   font-size: 48px;
   line-height: 56px;
   text-transform: uppercase;
+  font-family: 'optimusprincepssemiboldRg';
 }
 
 /* common styles !!!YOU DON'T NEED THEM  */
@@ -358,5 +378,47 @@ footer .heading {
   50% {
     border-color: transparent;
   }
+}
+
+@media screen and (max-width: 768px) {
+  .hero_main img {
+    width: 14rem;
+  }
+  .header nav {
+    width: 100%;
+  }
+  .hero_bg {
+    background: url("../img/dotair background png mobile.png");
+    background-repeat: none;
+  }
+}
+
+.music_bg {
+  background: url("../img/music-background desktop.png");
+}
+
+.music_heading {
+  color: #FEE105;
+}
+
+.music_content {
+  padding-bottom: 8rem;
+  padding-top: 15rem;
+}
+
+.carousel-control-prev {
+  left: 5vw;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("../img/Line 2.png");
+}
+
+.carousel-control-next {
+  right: 5vw;
+}
+
+.carousel-control-next-icon {
+  background-image: url("../img/Line 3.png");
 }
 /*# sourceMappingURL=style.css.map */

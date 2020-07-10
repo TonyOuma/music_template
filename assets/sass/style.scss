@@ -1,4 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+@font-face {
+    font-family: 'optimusprincepssemiboldRg';
+    src: url('../fonts/optimusprincepssemibold-webfont.woff2') format('woff2'),
+         url('../fonts/optimusprincepssemibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'optimusprincepsregular';
+    src: url('../fonts/optimusprinceps-webfont.woff2') format('woff2'),
+         url('../fonts/optimusprinceps-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 $bg-blue: #090236;;
 $primary-white: #FFF;
 $font-color-gray: rgba(255,
@@ -15,7 +34,7 @@ $primary-black: #000;
 }
 
 %intro_heading {
-    font-family: OptimusPrincepsSemiBold;
+    font-family: 'optimusprincepssemiboldRg';
     font-style: normal;
     font-weight: 600;
     font-size: 48px;
@@ -36,6 +55,10 @@ $primary-black: #000;
     padding-top: 1.1rem;
     nav {
         width: 87%;
+
+        .navbar-toggler-icon{
+            background-image: url("../img/Group\ 26.svg");
+        }
     }
     .nav-link {
         font-style: normal;
@@ -175,6 +198,7 @@ footer {
     padding-top: 41px;
     ul {
         li {
+            line-height: 35px;
             list-style: none;
             color: #FFF !important;
             span {
@@ -186,6 +210,7 @@ footer {
     }
     .social_icons {
         li {
+            
             img {
                 padding-right: 32.61px;
             }
@@ -199,6 +224,7 @@ footer {
         font-size: 48px;
         line-height: 56px;
         text-transform: uppercase;
+    font-family: 'optimusprincepssemiboldRg';
     }
 }
 
@@ -258,12 +284,7 @@ $progress-bar-offset-vert: 35px;
     }
 }
 
-// .progress-bar__bar,
-// .progress-bar__bar-inner,
-// .progress-bar__value,
-// .progress-bar__skill {
-//     box-sizing: border-box;
-// }
+
 
 .progress-bar__bar {
     position: relative;
@@ -365,3 +386,58 @@ $progress-1-label-top: - ($progress-1-height+7);
       border-color: transparent
     }
   }
+
+
+  @media screen and (max-width: 768px) {
+   .hero_main{
+    img{
+        width: 14rem;
+    }
+}
+.header{
+    nav{
+        width: 100%;
+    }
+}
+.hero {
+    &_bg {
+        background: url("../img/dotair\ background\ png\ mobile.png");
+        background-repeat: none;
+    }
+}
+// .carousel-item{
+//     display: block;
+// }
+  }
+
+
+
+
+  .music_bg{
+      background: url("../img/music-background\ desktop.png");
+  }
+  .music_heading{
+      @extend %intro_heading;
+      color: #FEE105;
+  }
+ 
+.music_content{
+    padding-bottom: 8rem;
+    padding-top: 15rem;
+}
+
+.carousel-control-prev{
+    left: 5vw;
+}
+
+.carousel-control-prev-icon{
+    background-image: url("../img/Line\ 2.png");
+}
+.carousel-control-next{
+    right: 5vw;
+
+    &-icon{
+        background-image: url("../img/Line\ 3.png");
+
+    }
+}
