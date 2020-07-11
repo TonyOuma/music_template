@@ -161,7 +161,7 @@ $primary-black: #000;
         }
     }
     .counter {
-        font-family: OptimusPrinceps;
+    font-family: 'optimusprincepssemiboldRg';
         font-style: normal;
         font-weight: 500;
         font-size: 52px;
@@ -365,6 +365,7 @@ $progress-1-label-top: - ($progress-1-height+7);
 }
 
 .progress-bar__value--1 {
+    font-family: 'optimusprincepssemiboldRg';
     @include position-absolute($top: $progress-1-label-top, $right: -20px);
     opacity: 0;
     &.js-animated {
@@ -451,6 +452,20 @@ footer{
 .info li {
     font-size: 14px;
 }
+.progress-bar__skill{
+    font-size: 14px;
+}
+.progress-bar__value {
+    font-size: 16px;
+}
+
+footer .social_icons li img {
+    padding-right: 12.61px;
+}
+
+
+
+
   }
 
 

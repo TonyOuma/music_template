@@ -152,7 +152,7 @@
 }
 
 .info .counter {
-  font-family: OptimusPrinceps;
+  font-family: 'optimusprincepssemiboldRg';
   font-style: normal;
   font-weight: 500;
   font-size: 52px;
@@ -334,6 +334,7 @@ footer .heading {
 }
 
 .progress-bar__value--1 {
+  font-family: 'optimusprincepssemiboldRg';
   position: absolute;
   top: -21px;
   right: -20px;
@@ -425,6 +426,15 @@ footer .heading {
   }
   .info li {
     font-size: 14px;
+  }
+  .progress-bar__skill {
+    font-size: 14px;
+  }
+  .progress-bar__value {
+    font-size: 16px;
+  }
+  footer .social_icons li img {
+    padding-right: 12.61px;
   }
 }
 
