@@ -118,7 +118,7 @@
 }
 
 .info {
-  background: url("../img/Mask Group.png");
+  background: url("../img/info-background desktop.png");
   background-position: center;
   color: #FFF;
 }
@@ -201,6 +201,14 @@ footer .social_icons li img {
 footer .copyright {
   padding-top: 61px;
   padding-bottom: 21px;
+}
+
+footer .copyright p {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 35px;
+  /* identical to box height, or 194% */
+  letter-spacing: 0.2em;
 }
 
 footer .heading {
@@ -391,6 +399,33 @@ footer .heading {
     background: url("../img/dotair background png mobile.png");
     background-repeat: none;
   }
+  .about_heading, .photos_heading, .gigs_heading, .blog_heading, .music_heading {
+    font-family: 'optimusprincepssemiboldRg';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 56px;
+  }
+  footer .heading {
+    font-size: 20px;
+  }
+  .info .counter {
+    font-size: 24px;
+  }
+  .info {
+    padding-left: 70px;
+  }
+  .info p {
+    font-size: 9px;
+    line-height: 12px;
+  }
+  .info_img {
+    width: 10.8rem;
+  }
+  .info li {
+    font-size: 14px;
+  }
 }
 
 .music_bg {
@@ -420,5 +455,28 @@ footer .heading {
 
 .carousel-control-next-icon {
   background-image: url("../img/Line 3.png");
+}
+
+.owl-theme .owl-controls {
+  margin-top: 30px;
+}
+
+.owl-theme .owl-controls .owl-page span {
+  background: #fff;
+  border: 2px solid #37a6a4;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span {
+  background: #37a6a4;
+}
+
+.pagination_bullet {
+  width: 16px;
+  border-radius: 50%;
+  height: 16px;
+  display: inline-block;
+  background: #c2c1c1;
+  margin-right: 5px;
 }
 /*# sourceMappingURL=style.css.map */
