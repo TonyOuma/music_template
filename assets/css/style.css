@@ -436,6 +436,18 @@ footer .heading {
   footer .social_icons li img {
     padding-right: 12.61px;
   }
+  footer .copyright p {
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: 0.2em;
+  }
+  footer .copyright {
+    padding-top: 31px;
+    padding-bottom: 21px;
+    width: 70%;
+    text-align: center;
+  }
 }
 
 .music_bg {
