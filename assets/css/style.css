@@ -395,6 +395,9 @@ footer li p {
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
   .hero_main img {
     width: 14rem;
   }
