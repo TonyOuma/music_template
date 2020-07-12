@@ -177,3 +177,7 @@ $('#carouselExample').on('slide.bs.carousel', function (e) {
 });
 
 
+// AOS initialize
+AOS.init({
+  duration: 1200,
+})

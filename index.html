@@ -9,6 +9,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
@@ -75,21 +76,36 @@
     <!-- Main section -->
     <main>
         <section>
-            <div class="container about">
-                <div class="row">
-                    <div class="col-md-5">
-                        <div class="card">
-                            <img src="./assets/img/artiste image.png" alt="" class="card-image">
+            <div class="container about" data-aos="fade-up">
+                <div class="">
+                    <div class="row">
+                        <div class="col-md-5 ">
+                            <div class="card">
+                                <img src="./assets/img/artiste image.png" alt="" class="card-image">
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <h2 class="about_heading">about me</h2>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
+                            ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+                            zzril delenit augue duis dolore te feugait nulla facilisi. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo.
+                            Sed fringilla mauris sit amet nibh.                        
                         </div>
                     </div>
-                    <div class="col-md-7">
-                        <h2 class="about_heading">about me</h2>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
-                        ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
-                        zzril delenit augue duis dolore te feugait nulla facilisi. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo.
-                        Sed fringilla mauris sit amet nibh.
+                </div>
+               
 
-                        
+                <div class="d-md-none d-block">
+                    <div class="row">
+                            <div class="col-5">
+                                <div class="card">
+                                    <img src="./assets/img/artiste_img_small.png" alt="">
+                                </div>
+                              
+                            </div>
+                            <div class="col-7">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+                            </div>
                     </div>
                 </div>
             </div>
@@ -136,7 +152,7 @@
         <section>
             <div class="container">
                 <div class="row mt-5">
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-aos="fade-right">
                         <div class="">
                             <div class="">
                                 <span class="progress-bar mt-5" data-effect="1" data-value="90" data-skill="music composition"></span>
@@ -150,7 +166,7 @@
                         </div>
 
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-aos="fade-left">
                         <div class="">
                             <div class="">
                                 <span class="progress-bar mt-5" data-effect="1" data-value="90" data-skill="black metal music production"></span>
@@ -392,11 +408,10 @@
 
 <div class="d-md-none d-block">
             <div class="row">
-                <!-- <div class="d-md-none d-block"> -->
                     <div class="col-7">
                         <ul>
-                            <li class="mb-3"><span class="heading">contact me</span></li>
-                            <li>
+                            <li class=""><span class="heading">contact me</span></li>
+                            <li class="font-gray">
                                 <p> For booking enquiries please contact:</p>
                             </li>
                             <li><span>Email: <a>hello@dotairs.com</a></span></li>
@@ -406,7 +421,7 @@
                     </div>
                     <div class="col-5">
                         <ul class="social_icons">
-                            <li class="heading mb-3">follow me</li>
+                            <li class="heading">follow me</li>
                             <li class="d-flex">
                                 <img src="./assets/img/instagram-small.svg" alt="Instagram Icon">
                                 <img src="./assets/img/twitter-small.svg" alt="Instagram Icon">
@@ -414,7 +429,6 @@
                             </li>
                         </ul>
                     </div>
-                <!-- </div> -->
             </div>
         </div>
             
@@ -432,6 +446,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./assets/js/app.js"></script>
     <script>
         $('.counter').each(function() {

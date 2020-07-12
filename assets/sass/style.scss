@@ -219,6 +219,7 @@ footer {
     .copyright {
         padding-top: 61px;
         padding-bottom: 21px;
+        color: rgba(255, 255, 255, 0.75);
 
         p{
             font-weight: bold;
@@ -235,6 +236,11 @@ letter-spacing: 0.2em;
         text-transform: uppercase;
     font-family: 'optimusprincepssemiboldRg';
     }
+
+    
+}
+footer li p{
+    color: rgba(255, 255, 255, 0.75);
 }
 
 //COMMON VARIABLES
@@ -474,7 +480,9 @@ footer .copyright {
     width: 70%;
     text-align: center;
 }
-
+footer ul li {
+    line-height: 22px;
+}
 
   }
 
@@ -510,18 +518,6 @@ footer .copyright {
     }
 }
 
-
-.owl-theme .owl-controls{
-    margin-top: 30px;
-}
-.owl-theme .owl-controls .owl-page span{
-    background: #fff;
-    border: 2px solid #37a6a4;
-}
-.owl-theme .owl-controls .owl-page.active span,
-.owl-theme .owl-controls.clickable .owl-page:hover span{
-    background: #37a6a4;
-}
 
 .pagination_bullet{
     width: 16px;
